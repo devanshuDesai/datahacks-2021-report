@@ -119,7 +119,7 @@
                 <section class="step">
                     <div class="title">Removing Trend</div>
                     <p>We perform <b>linear regression</b> on a subset of our data such that <b><em>R<sup>2</sup></em>
-                            &#38;#8805;
+                            &#38; &#8805;
                             0.75</b>.
                         In order to remove the trend of each each signal, we subtract the the regression values at time
                         <em>t</em> actual values at time <em>t</em>, and then add back the mean of the original signal.
@@ -139,9 +139,10 @@
                         This is done for different rolling window sizes according to the following lookback periods:
                         <b>one
                             week, one month, one quarter, one half of a year, and one year</b>.
-                        This gave us: <b>67 x 13 x 5 = 4355 newly-engineered
-                            features</b>. Now, we need to remove the ones that
-                        are not important:
+                    </p>
+                    <p>
+                        This gave us <b>67 x 13 x 5 = 4355 newly-engineered features</b>. Now, we need to remove the
+                        ones that are not important:
                     </p>
                     <ol>
                         <li>Removing columns with more than 1% of missing data</li>
@@ -486,11 +487,14 @@
                     <p>Followed by that, we tested the dataset on Vanilla LSTM Architecture, LSTM Encoder- Decoder
                         Architecture, and ConvLSTM Architecture to generate the best fit deep learning model for
                         forecasting the dataset.
-                        We have found that <b>all three models performed better than expected</b>. We observed the RNN-based
+                        We have found that <b>all three models performed better than expected</b>. We observed the
+                        RNN-based
                         modeling performed the best optimization for the training sets as it has a strong memorizing
                         behavior to the fed in sequential data.
-                        However, these models were not able to generalize well to other data points. We also <b>prove that
-                            a high model complexity does not necessarily yield better predictions</b>, perhaps optimizing some
+                        However, these models were not able to generalize well to other data points. We also <b>prove
+                            that
+                            a high model complexity does not necessarily yield better predictions</b>, perhaps
+                        optimizing some
                         hyperparameters, such as the batch size,
                         learning rate, number of LSTM cells, and adding dropout.</p>
                 </section>
